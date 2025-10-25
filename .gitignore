@@ -1,0 +1,82 @@
+# ===========================
+# FastAPI / Python .gitignore
+# ===========================
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+MANIFEST
+
+# ---- Virtualenv / Poetry ----
+.env
+.venv
+env/
+venv/
+ENV/
+.poetry/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ---- Logs / Debug ----
+*.log
+logs/
+debug.log
+*.coverage
+coverage.xml
+htmlcov/
+
+# ---- FastAPI / Uvicorn ----
+*.db
+*.sqlite3
+instance/
+uploads/
+media/
+staticfiles/
+
+# ---- Testing ----
+.coverage
+.cache/
+.tox/
+nosetests.xml
+test-results/
+
+# ---- Jupyter / IPython ----
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# ---- System ----
+.DS_Store
+Thumbs.db
+
+# ---- Docker ----
+*.pid
+*.seed
+*.bak
+*.swp
+docker-compose.override.yml
+.env.docker
+
+# ---- Local Configs ----
+config/*.local.*
+secrets.json
+*.secret.*
