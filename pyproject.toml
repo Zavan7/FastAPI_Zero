@@ -1,5 +1,5 @@
 [project]
-name = "fast_zero"
+name = "fastapi_zero"
 version = "0.1.0"
 description = ""
 authors = [
@@ -41,7 +41,7 @@ pre_format = 'ruff check --fix'
 format = 'ruff format'
 run = 'fastapi dev fastapi_zero/app.py'
 pre_test = 'task lint'
-test = 'pytest -s -x --cov=fast_zero -vv'
+test = 'pytest -s -x --cov=fastapi_zero -vv'
 post_test = 'coverage html'
 
 [build-system]
